@@ -24,44 +24,104 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Product landing page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header id="header">
-        <img src="" alt="" srcset="" id="header-img" alt="Company logo">
+        <img src="img/main_1.svg" alt="" srcset="" id="header-img" alt="Company logo">
+        <div>Zen Solutions</div>
         <nav id="nav-bar">
             <a href="#con-contact" class="nav-link">Contact</a>
             <a href="#con-video" class="nav-link">Video</a>
             <a href="#con-features" class="nav-link">Features</a>
             <a href="#con-pricing" class="nav-link">Pricing</a>
         </nav>
+
     </header>
 
     <main>
+        <!--**************     Contact   ****************************************************************************************************************************-->
         <section id="con-contact">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input type="email" id="email" placeholder="Enter your email" name="email" required />
-                <input type="submit" id="submit" value="Submit" />
+                <input type="submit" id="submit" value="Wake up!" />
             </form>
         </section>
-
+        <!--**************      Video     ****************************************************************************************************************************-->
         <section id="con-video">
-            <iframe id="video" src="https://www.youtube.com/embed/U-rJyu4uQ4w"></iframe>
+            <iframe id="video" src="https://www.youtube.com/embed/7SBWI2a6XhM"></iframe>
         </section>
-
+        <!--**************     Features   **************************************************************************************************************************-->
         <section id="con-features">
-            Features: Lorem ipsum...
+            <img src="" alt="" srcset="" id="basic-img" alt="Basic kit">
+            <h4>Includes:</h4>
+            <p></p>
+
+        </section>
+        <!--**************     Prices   ****************************************************************************************************************************-->
+        <section id="con-pricing">
+
+            <article>
+                <img src="" alt="" srcset="" id="basic-img" alt="Basic kit">
+                <h3>Basic</h3>
+                <h4>Includes:</h4>
+                <ul>
+                    <li>Mini container (10x15 in.)</li>
+                    <li>Sand</li>
+                    <li>Rake</li>
+                </ul>
+                <input type="button" id="buy_basic" value="10 USD" />
+            </article>
+
+            <article>
+                <img src="" alt="" srcset="" id="int-img" alt="Intermediate kit">
+                <h3>Intermediate</h3>
+                <h4>Includes:</h4>
+                <ul>
+                    <li>Medium container (20x15 in)</li>
+                    <li>Sand</li>
+                    <li>Rake</li>
+                    <li>Pebbles</li>
+                    <li>Aroma oil</li>
+                </ul>
+                <input type="button" id="buy_inter" value="20 USD" />
+            </article>
+
+            <article>
+                <img src="" alt="" srcset="" id="adv-img" alt="Advanced kit">
+                <h3>Advanced</h3>
+                <h4>Includes:</h4>
+                <ul>
+                    <li>Intermediate kit</li>
+                    <li>Relax oriental music CD</li>
+                    <li>Bonsai tree</li>
+                </ul>
+                <input type="button" id="buy_adv" value="50 USD" />
+            </article>
+
+            <article>
+                <img src="" alt="" srcset="" id="zen-img" alt="Enlightment kit">
+                <h3>Elightenment</h3>
+                <h4>Includes:</h4>
+                <ul>
+                    <li>1 (one) dead Buddha</li>
+                    <li>CD with sounds of one hand clapping</li>
+                    <li>Picture of your original face before you were born (Please send us your digital photo)</li>
+                    <li>If you have a rake from previous kits, we will send one to you, if you don`t, you will need to send us the one you have</li>
+                    <li>5 (five) pounds of flax</li>
+                </ul>
+                <input type="button" id="buy_adv" value="You already have one" disabled/>
+            </article>
         </section>
 
-        <section id="con-pricing">
-            Pricing: Lorem ipsum...
-        </section>
     </main>
 
     <footer>
         <address>
-        
+                <div>&copy; Egor Glushkov, 2018.</div>
+                <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
         </address>
     </footer>
 </body>
