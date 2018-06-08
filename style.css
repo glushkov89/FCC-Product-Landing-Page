@@ -9,7 +9,12 @@ header>section,
 nav>a,
 #logo-txt,
 #header-img,
-#con-pricing>article {
+#con-pricing>article,
+h3,
+h4,
+ul,
+input,
+img {
     border: 1px solid black;
 }
 
@@ -29,11 +34,17 @@ header {
         display: flex;
         flex-direction: column;
     }
-    header {
+    header,
+    footer {
         visibility: hidden;
     }
     #con-pricing>article {
-        width: 90%;
+        width: 100%;
+        height: auto;
+    }
+    #con-video>iframe {
+        width: 100%;
+        height: 40vh;
     }
 }
 
@@ -99,6 +110,18 @@ main {
 
 #con-pricing {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: stretch;
+}
+
+#con-pricing>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+article>img {
+    margin: 10% 30%;
 }
