@@ -1,4 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*****TEMP*******/
+
+header>section,
+nav>a,
+#logo-txt,
+#header-img,
+#con-pricing>article {
+    border: 1px solid black;
+}
+
+#con-pricing>article {
+    width: 22%;
+}
+
+header {
+    background-color: aqua;
+}
+
+
+/*****MEDIA*****************/
+
+@media only screen and (orientation: portrait) {
+    #con-pricing {
+        display: flex;
+        flex-direction: column;
+    }
+    header {
+        visibility: hidden;
+    }
+    #con-pricing>article {
+        width: 90%;
+    }
+}
+
+
+/*****Header****************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    /***/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    /***/
+}
+
 #header-img {
-    height: 5vh;
+    height: 4vw;
     width: auto;
+    padding: 0.5vw 1vw 0.5vw 3vw;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#navig {
+    display: flex;
+    align-items: center;
+    /***/
+}
+
+#logo-txt {
+    flex: auto;
+    /***/
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin-right: 2vw;
+    font-size: 1.4vw;
+}
+
+
+/*****Main****************/
+
+main {
+    /***/
+    margin-top: 7%;
+}
+
+
+/*-------Contact**********/
+
+
+/*-------Pricing**********/
+
+#con-pricing {
+    display: flex;
+    justify-content: space-around;
+    align-content: stretch;
 }

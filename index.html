@@ -28,21 +28,28 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
     <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body class="vertical">
     <header id="header">
-        <img src="img/main_1.svg" alt="" srcset="" id="header-img" alt="Company logo">
-        <div>Zen Solutions</div>
-        <nav id="nav-bar">
-            <a href="#con-contact" class="nav-link">Contact</a>
-            <a href="#con-video" class="nav-link">Video</a>
-            <a href="#con-features" class="nav-link">Features</a>
-            <a href="#con-pricing" class="nav-link">Pricing</a>
-        </nav>
+
+        <section id="logo">
+            <img src="img/main_1.svg" alt="" srcset="" id="header-img" alt="Company logo">
+            <div id="logo-txt">Zen Solutions</div>
+        </section>
+
+        <section id="navig">
+            <nav id="nav-bar">
+                <a href="#con-contact" class="nav-link">Contact</a>
+                <a href="#con-video" class="nav-link">Video</a>
+                <a href="#con-features" class="nav-link">Features</a>
+                <a href="#con-pricing" class="nav-link">Pricing</a>
+            </nav>
+        </section>
 
     </header>
 
     <main>
         <!--**************     Contact   ****************************************************************************************************************************-->
+
         <section id="con-contact">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input type="email" id="email" placeholder="Enter your email" name="email" required />
@@ -55,9 +62,21 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
         </section>
         <!--**************     Features   **************************************************************************************************************************-->
         <section id="con-features">
-            <img src="" alt="" srcset="" id="basic-img" alt="Basic kit">
-            <h4>Includes:</h4>
-            <p></p>
+            <dl>
+                <dt>Beginning WF</dt>
+                <dd>
+                    Indexed by feature so you can find answers easily and written in an accessible style, Beginning WF shows how Microsoft's Workflow Foundation (WF) technology can be used in a wide variety of applications.
+                </dd>
+                <dt>Office 2010 Workflow</dt>
+                <dd>
+                    Workflow is the glue that binds information worker processes, users, and artifacts— without it, information workers are just islands of data and potential. Office 2010 Workflow walks you through implementing workflow solutions.
+                </dd>
+                <dt>Pro Access 2010 Development</dt>
+                <dd>
+                    Pro Access 2010 Development is a fundamental resource for developing business applications that take advantage of the features of Access 2010. You'll learn how to build database applications, create Web-based databases, develop macros and VBA tools for
+                    Access applications, integrate Access with SharePoint, and much more.
+                </dd>
+            </dl>
 
         </section>
         <!--**************     Prices   ****************************************************************************************************************************-->
@@ -107,10 +126,10 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
                 <h4>Includes:</h4>
                 <ul>
                     <li>1 (one) dead Buddha</li>
+                    <li>5 (five) pounds of flax</li>
                     <li>CD with sounds of one hand clapping</li>
                     <li>Picture of your original face before you were born (Please send us your digital photo)</li>
-                    <li>If you have a rake from previous kits, we will send one to you, if you don`t, you will need to send us the one you have</li>
-                    <li>5 (five) pounds of flax</li>
+                    <li>If you have a rake from previous kits, we will send one to you, if you don`t, you will need to send it to us</li>
                 </ul>
                 <input type="button" id="buy_adv" value="You already have one" disabled/>
             </article>
@@ -122,6 +141,7 @@ User Story #15: My product landing page should utilize CSS flexbox at least once
         <address>
                 <div>&copy; Egor Glushkov, 2018.</div>
                 <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+                <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
         </address>
     </footer>
 </body>
