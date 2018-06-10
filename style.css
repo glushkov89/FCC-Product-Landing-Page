@@ -6,11 +6,11 @@
 /*****TEMP*******/
 
 header>section,
-nav>a,
+nav>a,footer,
 #logo-txt,
 #header-img,
 #con-pricing>article,
-h3,
+article>div>h3,#con-contact,main>section,
 h4,
 ul,
 input,
@@ -142,4 +142,21 @@ main {
 
 article>div>img {
     margin: 10% 30%;
+}
+
+/*--------Footer**********/
+
+footer{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    /***/
+    width: 80%;
+    margin: 5% auto 0px auto;
+}
+
+address{
+    text-align: left;
+    margin: 1% 1%;
 }
