@@ -48,7 +48,7 @@ header {
         padding: 5%;
         margin-top: 5%;
     }
-    article>img {
+    article>div>img {
         width: 35vw;
         height: auto;
     }
@@ -136,8 +136,10 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
+    /***/
+    padding: 1vw;
 }
 
-article>img {
+article>div>img {
     margin: 10% 30%;
 }
