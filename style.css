@@ -75,10 +75,28 @@ header {
         height: auto;
     }
     /*Display video to full width of the screen*/
-    #con-video>iframe {
-        width: 100%;
-        height: 40vh;
+    #con-video {
+        padding: 0 0 !important;
+        height: auto;
+        background-image: url();
+        background-color: #464646;
     }
+    #con-video>iframe {
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+        width: 100% !important;
+        height: 40vh !important;
+    }
+}
+
+
+/*****FONT******************/
+
+h2,
+h3,
+h4,
+#logo-txt {
+    font-family: 'Dosis', sans-serif;
 }
 
 
@@ -130,7 +148,8 @@ header {
 #logo-txt {
     flex: auto;
     /***/
-    font-size: 2.5vh;
+    font-size: 3vh;
+    font-weight: bold;
     padding: 1vw;
 }
 
@@ -147,7 +166,10 @@ header {
 /*-------Video************/
 
 #con-video {
-    height: 50vh;
+    padding-top: 15vh;
+    padding-left: 10vw;
+    padding-bottom: 5vh;
+    height: auto;
     background-image: url(img/video.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -155,17 +177,27 @@ header {
     background-color: #464646;
 }
 
+iframe {
+    width: 40vw;
+    height: 30vw;
+}
+
 
 /*-------Contact**********/
 
 #con-contact {
     padding-top: 8vh;
+    padding-left: 5vw;
     height: 100vh;
     background-image: url(img/contact.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #464646;
+}
+
+.contact {
+    font-size: 4vh;
 }
 
 
@@ -189,6 +221,7 @@ header {
 }
 
 #con-feat-list {
+    font-size: 2.5vh;
     height: auto;
     /***/
     display: flex;
@@ -207,14 +240,8 @@ header {
 
 .feature-group>div {
     flex: 1 1 30%;
-    /***/
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-content: stretch;
-    /***/
-    padding: 1vw;
-    margin: 2vw;
+    padding: 0 1vw 1vw 1vw;
+    margin: 0 4vw 2vw 4vw;
 }
 
 #con-feat-list>h3,
@@ -226,6 +253,7 @@ header {
 /*-------Pricing**********/
 
 #con-pricing {
+    color: antiquewhite;
     /***/
     display: -webkit-flex;
     display: flex;
@@ -244,6 +272,10 @@ header {
     align-content: center;
     /***/
     padding: 1vw;
+}
+
+#con-pricing>article>div>h3 {
+    text-align: center;
 }
 
 article>div>img {
