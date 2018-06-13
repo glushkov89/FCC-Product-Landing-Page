@@ -17,7 +17,12 @@ main>section,
 h4,
 ul,
 input,
-img {
+img,
+dl,
+h3,
+.feature-group,
+.feature-group>div,
+.feature-group>div>p {
     border: 1px solid black;
 }
 
@@ -40,6 +45,16 @@ header {
     }
     body {
         margin-top: 0px !important;
+    }
+    /*Adjust feature display*/
+    #con-feat-img,
+    #con-feat-list>h3 {
+        display: none !important;
+    }
+    .feature-group {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column !important;
     }
     /*Display pricing variants 1 column full*/
     /* width of the screen, adjust image size*/
@@ -73,6 +88,7 @@ body {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    background-color: #464646;
 }
 
 
@@ -127,30 +143,83 @@ header {
 
 /*****Main****************/
 
-body {
-    /***/
-    margin-top: 7%;
-}
-
 
 /*-------Video************/
 
 #con-video {
-    background-image: url();
+    height: 50vh;
+    background-image: url(img/video.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
 }
 
 
 /*-------Contact**********/
 
 #con-contact {
-    background-image: url();
+    padding-top: 8vh;
+    height: 100vh;
+    background-image: url(img/contact.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
 }
 
 
 /*-------Features*********/
 
 #con-features {
-    background-image: url();
+    color: antiquewhite;
+    /***/
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+#con-feat-img {
+    height: 65vh;
+    background-image: url(img/example.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+}
+
+#con-feat-list {
+    height: auto;
+    /***/
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: stretch;
+}
+
+.feature-group {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.feature-group>div {
+    flex: 1 1 30%;
+    /***/
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: stretch;
+    /***/
+    padding: 1vw;
+    margin: 2vw;
+}
+
+#con-feat-list>h3,
+.feature-group>div>h4 {
+    text-align: center;
 }
 
 
