@@ -56,6 +56,9 @@ header {
         display: flex;
         flex-direction: column !important;
     }
+    .feature-group>div {
+        margin: 3vh 5vw 3vh 5vw !important;
+    }
     /*Display pricing variants 1 column full*/
     /* width of the screen, adjust image size*/
     #con-pricing {
@@ -67,8 +70,8 @@ header {
         flex-basis: auto !important;
         width: 100%;
         height: auto;
-        padding: 5%;
-        margin-top: 5%;
+        padding: 3vh 3vw !important;
+        margin: 5vh 5vw 5vh 5vw;
     }
     article>div>img {
         width: 35vw;
@@ -97,6 +100,15 @@ h3,
 h4,
 #logo-txt {
     font-family: 'Dosis', sans-serif;
+}
+
+
+/*****BUTTONS***************/
+
+.button {
+    font-size: 2.2vh;
+    padding: 1vh 1vh;
+    border-radius: 0.5vh;
 }
 
 
@@ -212,7 +224,7 @@ iframe {
 }
 
 #con-feat-img {
-    height: 65vh;
+    height: 60vh;
     background-image: url(img/example.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -244,6 +256,14 @@ iframe {
     margin: 0 4vw 2vw 4vw;
 }
 
+.feature-group>div>p {
+    font-size: 2vh;
+}
+
+.feature-group>div>h4 {
+    font-size: 2.2vh;
+}
+
 #con-feat-list>h3,
 .feature-group>div>h4 {
     text-align: center;
@@ -253,6 +273,7 @@ iframe {
 /*-------Pricing**********/
 
 #con-pricing {
+    font-size: 2.5vh;
     color: antiquewhite;
     /***/
     display: -webkit-flex;
@@ -271,11 +292,21 @@ iframe {
     justify-content: space-between;
     align-content: center;
     /***/
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     padding: 1vw;
 }
 
 #con-pricing>article>div>h3 {
     text-align: center;
+}
+
+#con-pricing>article>div>h4 {
+    font-size: 2.2vh;
+}
+
+#con-pricing>article>div>ul {
+    font-size: 2vh;
 }
 
 article>div>img {
