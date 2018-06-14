@@ -110,7 +110,7 @@ h2,
 h3,
 h4,
 #logo-txt {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Yeon Sung', cursive;
 }
 
 
@@ -143,7 +143,8 @@ body {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    background-color: #3c3242;
+    background-color: #cdbea7;
+    /*  background-color: #3c3242;*/
 }
 
 
@@ -246,7 +247,8 @@ iframe {
 /*-------Features*********/
 
 #con-features {
-    color: #f1f1f2;
+    /*   background-color: #3c3242;*/
+    color: #011a27;
     /***/
     display: -webkit-flex;
     display: flex;
@@ -302,8 +304,9 @@ iframe {
 /*-------Pricing**********/
 
 #con-pricing {
+    padding-top: 8vh;
     font-size: 2.5vh;
-    color: #011a27;
+    color: #cdbea7;
     /*    background-color: #283655;*/
     /***/
     display: -webkit-flex;
@@ -323,7 +326,7 @@ iframe {
     align-content: center;
     /***/
     color: #011a27;
-    background-color: #ead39c;
+    background-color: #a3a599;
     margin-top: 3vh;
     margin-bottom: 3vh;
     padding: 1vw;
@@ -333,6 +336,7 @@ iframe {
 }
 
 #con-pricing>article:hover {
+    color: #ead39c;
     box-shadow: 4px 8px 12px 0 #ead39c;
 }
 
